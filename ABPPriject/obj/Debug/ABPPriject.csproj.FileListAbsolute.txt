@@ -25,3 +25,5 @@ C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\D
 C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.LoadForm1.resources
 C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.formm1.resources
 C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.Insertion.resources
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.Ostatok.resources
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.SelectOst.resources

@@ -28,5 +28,11 @@ namespace ABPPriject
             IncComp incComp = new IncComp();
             incComp.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SelectOst selectOst = new SelectOst();
+            selectOst.Show();
+        }
     }
 }
