@@ -41,8 +41,10 @@ namespace ABPPriject
             if (textBox1.Text!="")
             {
                 int Sum = 0;
+                bool hasval = false;
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
+                    hasval = true;
                     var cells = row.Cells;
                     if (Convert.ToBoolean(cells[0].Value) ==true)
                     {
@@ -62,8 +64,9 @@ namespace ABPPriject
                     zayava.dataGridView5.Columns[5].Visible = false;
                 }
                 
-                else
+                else if ((int?)дроныTableAdapter.ScalarQuery(textBox1.Text) != 0 && hasval)
                 {
+                    дроныTableAdapter.InsertQuery(Convert.ToDateTime(DateTime.Now.ToShortDateString()), textBox1.Text, Sum);
                     zayava.user = textBox1.Text;
                     zayava.LoadAll(textBox1.Text);
                     zayava.dataGridView5.Columns[5].Visible = false;

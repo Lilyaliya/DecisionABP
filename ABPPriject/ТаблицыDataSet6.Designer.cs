@@ -1017,12 +1017,12 @@ namespace ABPPriject.ТаблицыDataSet6TableAdapters {
             this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Пользователь", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Пользователь", global::System.Data.DataRowVersion.Original, false, null));
             this._commandCollection[3] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "UPDATE `Заявки` SET  `Дата изменения состояния` = ?, `Состояние` = ? WHERE Пользо" +
-                "ватель=?";
+            this._commandCollection[3].CommandText = "UPDATE `Заявки` SET  `Дата изменения состояния` = ?, `Состояние` = ? WHERE `№п/п`" +
+                "=?";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Дата_изменения_состояния", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата изменения состояния", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Состояние", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Состояние", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Пользователь", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Пользователь", global::System.Data.DataRowVersion.Original, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original__п_п", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "№п/п", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1364,7 +1364,7 @@ namespace ABPPriject.ТаблицыDataSet6TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int UpdateQuery1(global::System.Nullable<global::System.DateTime> Дата_изменения_состояния, string Состояние, string Original_Пользователь) {
+        public virtual int UpdateQuery1(global::System.Nullable<global::System.DateTime> Дата_изменения_состояния, string Состояние, int Original__п_п) {
             global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[3];
             if ((Дата_изменения_состояния.HasValue == true)) {
                 command.Parameters[0].Value = ((System.DateTime)(Дата_изменения_состояния.Value));
@@ -1378,12 +1378,7 @@ namespace ABPPriject.ТаблицыDataSet6TableAdapters {
             else {
                 command.Parameters[1].Value = ((string)(Состояние));
             }
-            if ((Original_Пользователь == null)) {
-                command.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[2].Value = ((string)(Original_Пользователь));
-            }
+            command.Parameters[2].Value = ((int)(Original__п_п));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {

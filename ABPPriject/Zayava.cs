@@ -47,7 +47,8 @@ namespace ABPPriject
                     {
 
                     }
-                    заявкиTableAdapter.UpdateQuery1(changeState.time, changeState.value, cells[5].Value.ToString());
+                    if (cells[0].Selected)
+                    заявкиTableAdapter.UpdateQuery1(changeState.time, changeState.value, int.Parse(cells[0].Value.ToString()));
                 }    
                
             }
