@@ -33,19 +33,19 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.таблицыDataSet1 = new ABPPriject.ТаблицыDataSet1();
-            this.дроныBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.дроныTableAdapter = new ABPPriject.ТаблицыDataSet1TableAdapters.ДроныTableAdapter();
             this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.стоимостьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.наименованиеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.стоимостьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.дроныBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.таблицыDataSet1 = new ABPPriject.ТаблицыDataSet1();
+            this.дроныTableAdapter = new ABPPriject.ТаблицыDataSet1TableAdapters.ДроныTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.таблицыDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.дроныBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.таблицыDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -89,42 +89,10 @@
             this.dataGridView1.Size = new System.Drawing.Size(544, 150);
             this.dataGridView1.TabIndex = 3;
             // 
-            // таблицыDataSet1
-            // 
-            this.таблицыDataSet1.DataSetName = "ТаблицыDataSet1";
-            this.таблицыDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // дроныBindingSource
-            // 
-            this.дроныBindingSource.DataMember = "Дроны";
-            this.дроныBindingSource.DataSource = this.таблицыDataSet1;
-            // 
-            // дроныTableAdapter
-            // 
-            this.дроныTableAdapter.ClearBeforeFill = true;
-            // 
             // Column2
             // 
             this.Column2.HeaderText = "";
             this.Column2.Name = "Column2";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "№";
-            this.dataGridViewTextBoxColumn1.HeaderText = "№";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // наименованиеDataGridViewTextBoxColumn
-            // 
-            this.наименованиеDataGridViewTextBoxColumn.DataPropertyName = "Наименование";
-            this.наименованиеDataGridViewTextBoxColumn.HeaderText = "Наименование";
-            this.наименованиеDataGridViewTextBoxColumn.Name = "наименованиеDataGridViewTextBoxColumn";
-            // 
-            // стоимостьDataGridViewTextBoxColumn
-            // 
-            this.стоимостьDataGridViewTextBoxColumn.DataPropertyName = "Стоимость";
-            this.стоимостьDataGridViewTextBoxColumn.HeaderText = "Стоимость";
-            this.стоимостьDataGridViewTextBoxColumn.Name = "стоимостьDataGridViewTextBoxColumn";
             // 
             // Column1
             // 
@@ -151,11 +119,43 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "№";
+            this.dataGridViewTextBoxColumn1.HeaderText = "№";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // наименованиеDataGridViewTextBoxColumn
+            // 
+            this.наименованиеDataGridViewTextBoxColumn.DataPropertyName = "Наименование";
+            this.наименованиеDataGridViewTextBoxColumn.HeaderText = "Наименование";
+            this.наименованиеDataGridViewTextBoxColumn.Name = "наименованиеDataGridViewTextBoxColumn";
+            // 
+            // стоимостьDataGridViewTextBoxColumn
+            // 
+            this.стоимостьDataGridViewTextBoxColumn.DataPropertyName = "Стоимость";
+            this.стоимостьDataGridViewTextBoxColumn.HeaderText = "Стоимость";
+            this.стоимостьDataGridViewTextBoxColumn.Name = "стоимостьDataGridViewTextBoxColumn";
+            // 
+            // дроныBindingSource
+            // 
+            this.дроныBindingSource.DataMember = "Дроны";
+            this.дроныBindingSource.DataSource = this.таблицыDataSet1;
+            // 
+            // таблицыDataSet1
+            // 
+            this.таблицыDataSet1.DataSetName = "ТаблицыDataSet1";
+            this.таблицыDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // дроныTableAdapter
+            // 
+            this.дроныTableAdapter.ClearBeforeFill = true;
+            // 
             // Registry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(646, 417);
+            this.ClientSize = new System.Drawing.Size(834, 536);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
@@ -166,8 +166,8 @@
             this.Text = "Registry";
             this.Load += new System.EventHandler(this.Registry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.таблицыDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.дроныBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.таблицыDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

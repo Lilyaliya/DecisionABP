@@ -13,6 +13,7 @@ namespace ABPPriject
     public partial class Zayava : Form
     {
         public string user = "";
+        public ChangeState changeState;
         public Zayava()
         {
             InitializeComponent();
@@ -40,12 +41,26 @@ namespace ABPPriject
             foreach (DataGridViewRow row in dataGridView5.Rows)
             {
                 var cells = row.Cells;
-                заявкиTableAdapter.UpdateQuery(Convert.ToDateTime(DateTime.Now.ToString()), cells[3].Value.ToString(), cells[5].Value.ToString());
+                if (cells[0].Value!=null)
+                {
+                    if ((string)cells[3].Value== "Идет сборка"&&changeState.value== "Готова к отгрузке")
+                    {
+
+                    }
+                    заявкиTableAdapter.UpdateQuery1(changeState.time, changeState.value, cells[5].Value.ToString());
+                }    
+               
             }
             if (user != "")
                 LoadAll(user);
             else
                 ZayavaLoad();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            changeState = new ChangeState();
+            changeState.Show();
         }
     }
 }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeState.Designer.cs">
+      <DependentUpon>ChangeState.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     <Compile Include="Экспорт.Designer.cs">
       <DependentUpon>Экспорт.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChangeState.resx">
+      <DependentUpon>ChangeState.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -329,9 +338,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Таблицы.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Таблицы.accdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

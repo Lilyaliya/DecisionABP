@@ -40,6 +40,7 @@
             this.состояниеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.общаяСуммаЗаявкиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.пользовательDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.заявкиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.таблицыDataSet6)).BeginInit();
@@ -47,7 +48,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(88, 316);
+            this.button1.Location = new System.Drawing.Point(12, 183);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -67,7 +68,7 @@
             this.общаяСуммаЗаявкиDataGridViewTextBoxColumn,
             this.пользовательDataGridViewTextBoxColumn});
             this.dataGridView5.DataSource = this.заявкиBindingSource;
-            this.dataGridView5.Location = new System.Drawing.Point(79, 84);
+            this.dataGridView5.Location = new System.Drawing.Point(12, 12);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.Size = new System.Drawing.Size(642, 150);
             this.dataGridView5.TabIndex = 1;
@@ -111,6 +112,7 @@
             this.состояниеDataGridViewTextBoxColumn.DataPropertyName = "Состояние";
             this.состояниеDataGridViewTextBoxColumn.HeaderText = "Состояние";
             this.состояниеDataGridViewTextBoxColumn.Name = "состояниеDataGridViewTextBoxColumn";
+            this.состояниеDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // общаяСуммаЗаявкиDataGridViewTextBoxColumn
             // 
@@ -125,11 +127,22 @@
             this.пользовательDataGridViewTextBoxColumn.HeaderText = "Пользователь";
             this.пользовательDataGridViewTextBoxColumn.Name = "пользовательDataGridViewTextBoxColumn";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(145, 183);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(151, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Изменить данные";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Zayava
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView5);
             this.Controls.Add(this.button1);
             this.Name = "Zayava";
@@ -154,5 +167,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn состояниеDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn общаяСуммаЗаявкиDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn пользовательDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button2;
     }
 }

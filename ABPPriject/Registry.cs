@@ -48,6 +48,7 @@ namespace ABPPriject
                     {
                         Sum += int.Parse(cells[3].Value.ToString());
                         Sum *= int.Parse(cells[4].EditedFormattedValue.ToString());
+                        //дроныTableAdapter.InsertQuery1()
                         //LoadReg();
                         // int selected = Convert.ToInt32(остаткиTableAdapter.ScalarQuery(cells[1].Value.ToString(), Convert.ToDateTime(dateTimePicker1.Value.ToShortDateString())));
                         // остаткиTableAdapter.UpdateQueryAll(selected,cells[1].Value.ToString() , Convert.ToDateTime(dateTimePicker1.Value.ToShortDateString()));

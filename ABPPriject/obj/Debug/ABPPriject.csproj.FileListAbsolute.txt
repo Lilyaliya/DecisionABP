@@ -34,3 +34,4 @@ C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\D
 C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.Registry.resources
 C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\bin\Debug\Таблицы.accdb
 C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.Zayava.resources
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.ChangeState.resources
