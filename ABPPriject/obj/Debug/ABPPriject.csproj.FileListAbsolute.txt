@@ -27,3 +27,10 @@ C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\D
 C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.Insertion.resources
 C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.Ostatok.resources
 C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.SelectOst.resources
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\Interop.LCC11.dll
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\Interop.MsoEuro.dll
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.csproj.ResolveComReference.cache
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.Экспорт.resources
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.Registry.resources
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\bin\Debug\Таблицы.accdb
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.Zayava.resources

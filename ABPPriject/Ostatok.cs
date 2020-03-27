@@ -59,5 +59,48 @@ namespace ABPPriject
             }
             остаткиTableAdapter.FillBy(таблицыDataSet5.Остатки);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           /* Microsoft.Office.Interop.Excel.Application Exl = new Microsoft.Office.Interop.Excel.Application();
+            Microsoft.Office.Interop.Excel.Workbook wb;
+
+            XlReferenceStyle RefStyle = Exl.ReferenceStyle;
+            Exl.Visible = true;
+
+            String TemplatePath = System.Windows.Forms.Application.StartupPath + @"\Экспорт данных.xlt";
+            try
+            {
+                wb = Exl.Workbooks.Add(TemplatePath); // !!!
+            }
+            catch (System.Exception ex)
+            {
+                throw new Exception("Не удалось загрузить шаблон для экспорта " + TemplatePath + "\n" + ex.Message);
+            }
+            Worksheet ws = wb.Worksheets.get_Item(1) as Worksheet;
+            for (int j = 0; j < grid.Columns.Count; ++j)
+            {
+                (ws.Cells[1, j + 1] as Range).Value2 = grid.Columns[j].HeaderText;
+                for (int i = 0; i < grid.Rows.Count; ++i)
+                {
+                    object Val = grid.Rows[i].Cells[j].Value;
+                    if (Val != null)
+                        (ws.Cells[i + 2, j + 1] as Range).Value2 = Val.ToString();
+                }
+            }
+            ws.Columns.EntireColumn.AutoFit();
+            Exl.ReferenceStyle = RefStyle;
+            ReleaseExcel(Exl as Object);*/
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var dialog = new PrintDialog();
+            
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+               //dialog.PrintVisual(dataGridView1, "Вывод этикетки на печать");
+            }
+        }
     }
 }

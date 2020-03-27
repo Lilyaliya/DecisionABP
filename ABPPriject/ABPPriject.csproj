@@ -90,6 +90,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registry.Designer.cs">
+      <DependentUpon>Registry.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelectOst.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,12 @@
     </Compile>
     <Compile Include="Tables.Designer.cs">
       <DependentUpon>Tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zayava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zayava.Designer.cs">
+      <DependentUpon>Zayava.cs</DependentUpon>
     </Compile>
     <Compile Include="ТаблицыDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -132,6 +144,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ТаблицыDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ТаблицыDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ТаблицыDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Экспорт.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Экспорт.Designer.cs">
+      <DependentUpon>Экспорт.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,11 +185,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Registry.resx">
+      <DependentUpon>Registry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SelectOst.resx">
       <DependentUpon>SelectOst.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tables.resx">
       <DependentUpon>Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zayava.resx">
+      <DependentUpon>Zayava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Экспорт.resx">
+      <DependentUpon>Экспорт.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -243,12 +275,63 @@
     <None Include="ТаблицыDataSet5.xss">
       <DependentUpon>ТаблицыDataSet5.xsd</DependentUpon>
     </None>
+    <None Include="ТаблицыDataSet6.xsc">
+      <DependentUpon>ТаблицыDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ТаблицыDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ТаблицыDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ТаблицыDataSet6.xss">
+      <DependentUpon>ТаблицыDataSet6.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Таблицы.accdb" />
+    <COMReference Include="LCC11">
+      <Guid>{EDCD5812-6A06-43C3-AFAC-46EF5D14E22C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Access.Dao">
+      <Guid>{4AC9E1DA-5BAD-4AC7-86E3-24F4CDCECA28}</Guid>
+      <VersionMajor>12</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MsoEuro">
+      <Guid>{76F6F3F5-9937-11D2-93BB-00105A994D2C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Таблицы.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

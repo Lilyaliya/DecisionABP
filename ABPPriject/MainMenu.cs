@@ -34,5 +34,12 @@ namespace ABPPriject
             SelectOst selectOst = new SelectOst();
             selectOst.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Registry registry = new Registry();
+            registry.Show();
+
+        }
     }
 }
