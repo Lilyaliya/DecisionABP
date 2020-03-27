@@ -30,45 +30,50 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.таблицыDataSet11 = new ABPPriject.ТаблицыDataSet1();
-            this.дроныTableAdapter1 = new ABPPriject.ТаблицыDataSet1TableAdapters.ДроныTableAdapter();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.технологическиеКартыTableAdapter1 = new ABPPriject.ТаблицыDataSet1TableAdapters.ТехнологическиеКартыTableAdapter();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.таблицыDataSet21 = new ABPPriject.ТаблицыDataSet2();
-            this.комплектующиеTableAdapter1 = new ABPPriject.ТаблицыDataSet2TableAdapters.КомплектующиеTableAdapter();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.комплектующиеТехнологическиеКартыBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.технологическиеКартыTableAdapter2 = new ABPPriject.ТаблицыDataSet2TableAdapters.ТехнологическиеКартыTableAdapter();
             this.Дроны = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.таблицыDataSet11 = new ABPPriject.ТаблицыDataSet1();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.дроныTableAdapter1 = new ABPPriject.ТаблицыDataSet1TableAdapters.ДроныTableAdapter();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.таблицыDataSet21 = new ABPPriject.ТаблицыDataSet2();
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.комплектующиеTableAdapter1 = new ABPPriject.ТаблицыDataSet2TableAdapters.КомплектующиеTableAdapter();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.технологическиеКартыTableAdapter1 = new ABPPriject.ТаблицыDataSet1TableAdapters.ТехнологическиеКартыTableAdapter();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.комплектующиеТехнологическиеКартыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.технологическиеКартыTableAdapter2 = new ABPPriject.ТаблицыDataSet2TableAdapters.ТехнологическиеКартыTableAdapter();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.таблицыDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.таблицыDataSet21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.комплектующиеТехнологическиеКартыBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.таблицыDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.таблицыDataSet21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.комплектующиеТехнологическиеКартыBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -85,38 +90,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(345, 201);
             this.dataGridView1.TabIndex = 0;
             // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "№";
-            this.dataGridViewTextBoxColumn4.HeaderText = "№";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Наименование";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Наименование";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Стоимость";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Стоимость";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataMember = "Дроны";
-            this.bindingSource1.DataSource = this.таблицыDataSet11;
-            // 
-            // таблицыDataSet11
-            // 
-            this.таблицыDataSet11.DataSetName = "ТаблицыDataSet1";
-            this.таблицыDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // дроныTableAdapter1
-            // 
-            this.дроныTableAdapter1.ClearBeforeFill = true;
-            // 
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToAddRows = false;
@@ -124,37 +97,17 @@
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
-            this.dataGridView2.DataSource = this.bindingSource2;
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14});
+            this.dataGridView2.DataSource = this.bindingSource3;
             this.dataGridView2.Location = new System.Drawing.Point(14, 11);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(245, 201);
             this.dataGridView2.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Деталь";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Деталь";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Количество";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Количество";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // bindingSource2
-            // 
-            this.bindingSource2.DataMember = "ДроныТехнологическиеКарты";
-            this.bindingSource2.DataSource = this.bindingSource1;
-            // 
-            // технологическиеКартыTableAdapter1
-            // 
-            this.технологическиеКартыTableAdapter1.ClearBeforeFill = true;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // dataGridView3
             // 
@@ -163,44 +116,13 @@
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn11});
-            this.dataGridView3.DataSource = this.bindingSource3;
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10});
+            this.dataGridView3.DataSource = this.bindingSource2;
             this.dataGridView3.Location = new System.Drawing.Point(12, 271);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(345, 203);
             this.dataGridView3.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "№";
-            this.dataGridViewTextBoxColumn7.HeaderText = "№";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Наименование";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Наименование";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Категория";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Категория";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // bindingSource3
-            // 
-            this.bindingSource3.DataMember = "Комплектующие";
-            this.bindingSource3.DataSource = this.таблицыDataSet21;
-            // 
-            // таблицыDataSet21
-            // 
-            this.таблицыDataSet21.DataSetName = "ТаблицыDataSet2";
-            this.таблицыDataSet21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // комплектующиеTableAdapter1
-            // 
-            this.комплектующиеTableAdapter1.ClearBeforeFill = true;
             // 
             // dataGridView4
             // 
@@ -209,37 +131,16 @@
             this.dataGridView4.AutoGenerateColumns = false;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn15});
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18});
             this.dataGridView4.DataSource = this.комплектующиеТехнологическиеКартыBindingSource;
             this.dataGridView4.Location = new System.Drawing.Point(14, 242);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.ReadOnly = true;
             this.dataGridView4.Size = new System.Drawing.Size(245, 203);
             this.dataGridView4.TabIndex = 3;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "Дрон";
-            this.dataGridViewTextBoxColumn13.HeaderText = "Дрон";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "Количество";
-            this.dataGridViewTextBoxColumn15.HeaderText = "Количество";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.ReadOnly = true;
-            // 
-            // комплектующиеТехнологическиеКартыBindingSource
-            // 
-            this.комплектующиеТехнологическиеКартыBindingSource.DataMember = "КомплектующиеТехнологическиеКарты";
-            this.комплектующиеТехнологическиеКартыBindingSource.DataSource = this.bindingSource3;
-            // 
-            // технологическиеКартыTableAdapter2
-            // 
-            this.технологическиеКартыTableAdapter2.ClearBeforeFill = true;
             // 
             // Дроны
             // 
@@ -287,6 +188,150 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // таблицыDataSet11
+            // 
+            this.таблицыDataSet11.DataSetName = "ТаблицыDataSet1";
+            this.таблицыDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataMember = "Дроны";
+            this.bindingSource1.DataSource = this.таблицыDataSet11;
+            // 
+            // дроныTableAdapter1
+            // 
+            this.дроныTableAdapter1.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "№";
+            this.dataGridViewTextBoxColumn4.HeaderText = "№";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Наименование";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Наименование";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Стоимость";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Стоимость";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // таблицыDataSet21
+            // 
+            this.таблицыDataSet21.DataSetName = "ТаблицыDataSet2";
+            this.таблицыDataSet21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingSource2
+            // 
+            this.bindingSource2.DataMember = "Комплектующие";
+            this.bindingSource2.DataSource = this.таблицыDataSet21;
+            // 
+            // комплектующиеTableAdapter1
+            // 
+            this.комплектующиеTableAdapter1.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "№";
+            this.dataGridViewTextBoxColumn7.HeaderText = "№";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Наименование";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Наименование";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Категория";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Категория";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Количество";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Количество";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // bindingSource3
+            // 
+            this.bindingSource3.DataMember = "ДроныТехнологическиеКарты";
+            this.bindingSource3.DataSource = this.bindingSource1;
+            // 
+            // технологическиеКартыTableAdapter1
+            // 
+            this.технологическиеКартыTableAdapter1.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "№";
+            this.dataGridViewTextBoxColumn11.HeaderText = "№";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Дрон";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Дрон";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Деталь";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Деталь";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Количество";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Количество";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            // 
+            // комплектующиеТехнологическиеКартыBindingSource
+            // 
+            this.комплектующиеТехнологическиеКартыBindingSource.DataMember = "КомплектующиеТехнологическиеКарты";
+            this.комплектующиеТехнологическиеКартыBindingSource.DataSource = this.bindingSource2;
+            // 
+            // технологическиеКартыTableAdapter2
+            // 
+            this.технологическиеКартыTableAdapter2.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "№";
+            this.dataGridViewTextBoxColumn15.HeaderText = "№";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Дрон";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Дрон";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "Деталь";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Деталь";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "Количество";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Количество";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
+            // 
             // Tables
             // 
             this.ClientSize = new System.Drawing.Size(826, 520);
@@ -298,18 +343,18 @@
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Tables";
-            this.Load += new System.EventHandler(this.Tables_Load_1);
+            this.Load += new System.EventHandler(this.Tables_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.таблицыDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.таблицыDataSet21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.комплектующиеТехнологическиеКартыBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.таблицыDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.таблицыDataSet21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.комплектующиеТехнологическиеКартыBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -341,33 +386,38 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn наименованиеDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn категорияDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.Label Дроны;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
         private ТаблицыDataSet1 таблицыDataSet11;
         private System.Windows.Forms.BindingSource bindingSource1;
         private ТаблицыDataSet1TableAdapters.ДроныTableAdapter дроныTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.BindingSource bindingSource2;
-        private ТаблицыDataSet1TableAdapters.ТехнологическиеКартыTableAdapter технологическиеКартыTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridView dataGridView3;
         private ТаблицыDataSet2 таблицыDataSet21;
-        private System.Windows.Forms.BindingSource bindingSource3;
+        private System.Windows.Forms.BindingSource bindingSource2;
         private ТаблицыDataSet2TableAdapters.КомплектующиеTableAdapter комплектующиеTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.BindingSource bindingSource3;
+        private ТаблицыDataSet1TableAdapters.ТехнологическиеКартыTableAdapter технологическиеКартыTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private System.Windows.Forms.BindingSource комплектующиеТехнологическиеКартыBindingSource;
         private ТаблицыDataSet2TableAdapters.ТехнологическиеКартыTableAdapter технологическиеКартыTableAdapter2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.Label Дроны;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
     }
 }

@@ -32,5 +32,16 @@ namespace ABPPriject.Properties {
                 return ((string)(this["ConnStr"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public int Insertion {
+            get {
+                return ((int)(this["Insertion"]));
+            }
+            set {
+                this["Insertion"] = value;
+            }
+        }
     }
 }

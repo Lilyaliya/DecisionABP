@@ -52,6 +52,36 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formm1.Designer.cs">
+      <DependentUpon>formm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncComp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncComp.Designer.cs">
+      <DependentUpon>IncComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insertion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insertion.Designer.cs">
+      <DependentUpon>Insertion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadForm1.Designer.cs">
+      <DependentUpon>LoadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tables.cs">
@@ -75,8 +105,33 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ТаблицыDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ТаблицыDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ТаблицыDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ТаблицыDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ТаблицыDataSet4.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formm1.resx">
+      <DependentUpon>formm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncComp.resx">
+      <DependentUpon>IncComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insertion.resx">
+      <DependentUpon>Insertion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadForm1.resx">
+      <DependentUpon>LoadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -131,6 +186,28 @@
     </None>
     <None Include="ТаблицыDataSet2.xss">
       <DependentUpon>ТаблицыDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ТаблицыDataSet31.xsc">
+      <DependentUpon>ТаблицыDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="ТаблицыDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ТаблицыDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ТаблицыDataSet31.xss">
+      <DependentUpon>ТаблицыDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="ТаблицыDataSet4.xsc">
+      <DependentUpon>ТаблицыDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ТаблицыDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ТаблицыDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ТаблицыDataSet4.xss">
+      <DependentUpon>ТаблицыDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

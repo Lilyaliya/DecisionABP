@@ -88,7 +88,7 @@ namespace ABPPriject
             //dataGridView2.DataSource = ExcelSet;
             dbase.Open(); // открыть соединение
                           //string directory = @Directory.GetCurrentDirectory();
-            string Command = @"Insert Into [MS Access;Database=" + directory + "\\Таблицы.accdb;].[Дроны] Select * From [Лист1$]";
+            string Command = @"Insert Into [MS Access;Database=" + directory + "\\Таблицы.accdb;].[Дроны] Select [Наименование],[Стоимость] From [Лист1$]";
             OleDbCommand sql_comm = new OleDbCommand(Command, dbase);
             sql_comm.ExecuteNonQuery();
             dbase.Close();
@@ -216,7 +216,7 @@ namespace ABPPriject
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
     }
 }

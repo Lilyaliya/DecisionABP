@@ -20,3 +20,8 @@ C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\D
 C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.csproj.CoreCompileInputs.cache
 C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.exe
 C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.pdb
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.MainMenu.resources
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.IncComp.resources
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.LoadForm1.resources
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.formm1.resources
+C:\Users\Administrator.DESKTOP-PLPCFAO\source\repos\DecisionABP\ABPPriject\obj\Debug\ABPPriject.Insertion.resources
