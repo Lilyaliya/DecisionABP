@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using LiveCharts;
 using LiveCharts.Helpers;
 using LiveCharts.Wpf;
+using System.Data.OleDb;
 
 namespace ABPPriject
 {
@@ -20,8 +21,54 @@ namespace ABPPriject
             InitializeComponent();
         }
 
+        public void RetTable()
+        {
+            List<Tuple<string, int>> collection = new List<Tuple<string, int>>();
+            OleDbConnection connection = new OleDbConnection(Properties.Settings.Default.ConnStr);
+            connection.Open();
+            DateTime date = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+            string date1 = DateTime.Now.ToShortDateString();
+            string command = @"Select Комплектующее, Остаток From Остатки Where Дата Like '"+date1+"'";
+            OleDbDataAdapter adapter = new OleDbDataAdapter(command, connection);
+            DataTable table = new DataTable();
+            int a=adapter.Fill(table);
+            foreach (DataRow row in table.Rows)
+            {
+                var cells = row.ItemArray;
+                string name = cells[0].ToString();
+                
+                int count=int.Parse(cells[1].ToString());
+                collection.Add(new Tuple<string, int>(name,count));
+            }
+
+        }
+
+        public void RetZayava()
+        {
+            List<Tuple<int, string,string,string,string>> collection = new List<Tuple<int, string,string,string,string>>();
+            OleDbConnection connection = new OleDbConnection(Properties.Settings.Default.ConnStr);
+            connection.Open();
+            //DateTime date = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+            string date1 = DateTime.Now.ToShortDateString();
+            string command = @"Select * From Заявки ";
+            OleDbDataAdapter adapter = new OleDbDataAdapter(command, connection);
+            DataTable table = new DataTable();
+            int a = adapter.Fill(table);
+            foreach (DataRow row in table.Rows)
+            {
+                var cells = row.ItemArray;
+                int number = int.Parse(cells[0].ToString());
+                string data1 = cells[1].ToString();
+                string data2 = cells[2].ToString();
+                string sostoyanie = cells[3].ToString();
+                string sum = cells[4].ToString();
+                collection.Add(new Tuple<int, string,string,string,string>(number, data1,data2,sostoyanie,sum));
+            }
+        }
         private void Form2_Load(object sender, EventArgs e)
         {
+            RetTable();
+            RetZayava();
             // TODO: данная строка кода позволяет загрузить данные в таблицу "таблицыDataSet8.Остатки". При необходимости она может быть перемещена или удалена.
             this.остаткиTableAdapter.FillBy(this.таблицыDataSet8.Остатки, Convert.ToDateTime(dateTimePicker1.Value.ToShortDateString()), Convert.ToDateTime(dateTimePicker2.Value.ToShortDateString()));
             cartesianChart2.AxisX.Add(new LiveCharts.Wpf.Axis
