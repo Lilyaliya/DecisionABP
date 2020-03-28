@@ -141,9 +141,9 @@ namespace ABPPriject
                     bool notnull = ((string)cells[2] != "") ? true : false;
                     bool notnull2 = ((string)cells[1] != "") ? true : false;
                     if (!notnull && !notnull2)
-                        throw new Exception();
+                        throw new System.Exception();
                 }
-                catch (Exception)
+                catch (System.Exception)
                 {
                     IsException = true;
                     MessageBox.Show("Похоже, в тех. картах указаны неверные данные. Исправьте значения в таблице и загрузите её еще раз еще раз");

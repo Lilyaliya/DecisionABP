@@ -36,6 +36,11 @@ namespace ABPPriject
             заявкиTableAdapter.FillBy(таблицыDataSet6.Заявки, value);
         }
 
+        public void LoadEss()
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow row in dataGridView5.Rows)
@@ -43,12 +48,19 @@ namespace ABPPriject
                 var cells = row.Cells;
                 if (cells[0].Value!=null)
                 {
-                    if ((string)cells[3].Value== "Идет сборка"&&changeState.value== "Готова к отгрузке")
-                    {
-
-                    }
+                    
                     if (cells[0].Selected)
-                    заявкиTableAdapter.UpdateQuery1(changeState.time, changeState.value, int.Parse(cells[0].Value.ToString()));
+                    {
+                        заявкиTableAdapter.UpdateQuery1(Convert.ToDateTime(DateTime.Now.ToShortDateString()), changeState.value, int.Parse(cells[0].Value.ToString()));
+                        if ((string)cells[3].Value == "Идет сборка" && changeState.value == "Готова к отгрузке")
+                        {
+                            Exception exception = new Exception();
+                            exception.data = DateTime.Now.ToShortDateString();
+                            exception.LoadEss(int.Parse(cells[0].Value.ToString()));
+                            exception.Show();
+                        }
+                    }
+                    
                 }    
                
             }

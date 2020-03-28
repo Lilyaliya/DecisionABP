@@ -1377,12 +1377,13 @@ namespace ABPPriject.ТаблицыDataSet1TableAdapters {
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "Insert Into Заявки ([Дата создания], Состояние, Пользователь, [Общая сумма заявки" +
-                "]) values (?, \'Запрошено разрешение у ФСБ\', ?, ?)";
+            this._commandCollection[1].CommandText = "INSERT INTO Заявки\r\n                         ([№п/п], [Дата создания], Состояние," +
+                " Пользователь, [Общая сумма заявки])\r\nVALUES        (?, ?, \'Создана\', ?, ?)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Дата_создания", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата создания", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Пользователь", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Пользователь", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Общая_сумма_заявки", global::System.Data.OleDb.OleDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Общая сумма заявки", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("_п_п", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "№п/п", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Дата_создания", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Дата создания", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Пользователь", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Пользователь", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Общая_сумма_заявки", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(19)), ((byte)(0)), "Общая сумма заявки", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[2].Connection = this.Connection;
             this._commandCollection[2].CommandText = "INSERT INTO Число Set Дроны=?, Количество=? , Пользователь=?";
@@ -1612,26 +1613,26 @@ namespace ABPPriject.ТаблицыDataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertQuery(object Дата_создания, object Пользователь, object Общая_сумма_заявки) {
+        public virtual int InsertQuery(int _п_п, global::System.Nullable<global::System.DateTime> Дата_создания, string Пользователь, global::System.Nullable<decimal> Общая_сумма_заявки) {
             global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[1];
-            if ((Дата_создания == null)) {
-                throw new global::System.ArgumentNullException("Дата_создания");
+            command.Parameters[0].Value = ((int)(_п_п));
+            if ((Дата_создания.HasValue == true)) {
+                command.Parameters[1].Value = ((System.DateTime)(Дата_создания.Value));
             }
             else {
-                command.Parameters[0].Value = ((object)(Дата_создания));
+                command.Parameters[1].Value = global::System.DBNull.Value;
             }
             if ((Пользователь == null)) {
-                throw new global::System.ArgumentNullException("Пользователь");
+                command.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                command.Parameters[1].Value = ((object)(Пользователь));
+                command.Parameters[2].Value = ((string)(Пользователь));
             }
-            if ((Общая_сумма_заявки == null)) {
-                throw new global::System.ArgumentNullException("Общая_сумма_заявки");
+            if ((Общая_сумма_заявки.HasValue == true)) {
+                command.Parameters[3].Value = ((decimal)(Общая_сумма_заявки.Value));
             }
             else {
-                command.Parameters[2].Value = ((object)(Общая_сумма_заявки));
+                command.Parameters[3].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 

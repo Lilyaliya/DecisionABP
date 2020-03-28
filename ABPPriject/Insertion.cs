@@ -47,7 +47,7 @@ namespace ABPPriject
                         поступленияTableAdapter1.UpdateQuery(cells[1].Value.ToString(), (int)cells[2].Value, textBox1.Text, Convert.ToDateTime(label4.Text), cells[0].Value.ToString(), Properties.Settings.Default.Insertion);
                         поступленияTableAdapter1.UpdateQuery1((int)cells[2].Value, cells[0].Value.ToString());
                     }
-                    catch (Exception exc)
+                    catch (System.Exception exc)
                     {
                         MessageBox.Show(exc.ToString());
                         MessageBox.Show("Заполните все необходимые поля и попробуйте еще раз");

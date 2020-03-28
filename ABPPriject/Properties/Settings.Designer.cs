@@ -43,5 +43,17 @@ namespace ABPPriject.Properties {
                 this["Insertion"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Zayava {
+            get {
+                return ((int)(this["Zayava"]));
+            }
+            set {
+                this["Zayava"] = value;
+            }
+        }
     }
 }
